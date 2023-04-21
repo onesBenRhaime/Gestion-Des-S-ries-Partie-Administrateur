@@ -1,6 +1,9 @@
 
 package Test;
 
+import DAO.MyConnection;
+import java.sql.Connection;
+
 public class Test {
 
     /**
@@ -8,6 +11,8 @@ public class Test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+            Connection cnx = MyConnection.getInstance().getCon();
+
     }
     
 }
